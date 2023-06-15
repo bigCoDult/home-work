@@ -5,6 +5,7 @@
 .ranking_box {
   background-color: brown;
   width: 30%;
+  /* width: 30%; */
   /* height: 100%; */
 }
 
@@ -32,42 +33,49 @@
   content: counter(index);
   content: counter(index);
   background-color: gray;
+  padding-left: 5px;
+  padding-right: 5px;
   /* position: relative; */
 
 }
 
-.ranking__li .icon__all{
-  display: inline-flex;
+.ranking__li__div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
 }
 
-icon__all
+.ranking__li
+{
+  /* background-color: blue; */
+  position: absolute;
+  left: 0;
+}
 
-
-.icon__up {
-  background-color: white;
+.icon__all {
+  background-color: red;
+  padding-left: 10px;
+  background: no-repeat;
   width: 10px;
   height: 10px;
   background-image: url('rank.png');
+}
+
+
+.icon__up {
   background-position: 0 0;
 }
 
 .icon__stay {
-  background-color: white;
-  width: 10px;
-  height: 10px;
-  background-image: url('rank.png');
-  background-position: 0 -22;
+  background-position: 0 -22px;
 }
 
 .icon__down {
-  background-color: white;
-  width: 10px;
-  height: 10px;
-  background-image: url('rank.png');
-  background-position: 0 -44;
+  background-position: 0 -44px;
 }
 
 
-/* .more__sites{
-  display: inline-block;
-} */
+.more__sites {
+  float: right;
+}

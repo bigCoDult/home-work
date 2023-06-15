@@ -7,14 +7,13 @@
   <title>Mission-05-Sprite</title>
   <link rel="stylesheet" href="./sprite.css" />
 </head>
-
-<body>
-  <!-- 
-  각 항목은 ol로 만들라고 하셧고 
-  거기에 숫자는 네모로, 
-  숫자&항목&등락은 가운데 정렬
-  그리드를 쓰면 쉬울것 
+<!-- 
+각 항목은 ol로 만들라고 하셧고 
+거기에 숫자는 네모로, 
+숫자&항목&등락은 가운데 정렬
+그리드를 쓰면 쉬울것 
 -->
+<body>
   <div class="ranking_box">
     <h3 class="ranking__head">인기 <span class="font__orange">사이트</span></h3>
 
@@ -22,7 +21,14 @@
       <div class="ranking__li__div">
         <a href="/">
           <span class="ranking__li">W3C</span>
-          <span class="icon__up"></span>
+          <span class="icon__all icon__up"></span>
+        </a>
+      </div>
+
+      <div class="ranking__li__div">
+        <a href="/">
+          <span class="ranking__li">W3C</span>
+          <span class="icon__all icon__down"></span>
         </a>
       </div>
 
@@ -34,32 +40,18 @@
         </a>
       </div>
 
-
-      <div class="ranking__li__div">
-        <a href="/">
-          <span class="ranking__li">W3C</span>
-          <span class="icon__all icon__down"></span>
-        </a>
-      </div>
-
       <span class="ranking__li__div">
         <a href="/">
           <span class="ranking__li">W3C</span>
           <span class="icon__all icon__up"></span>
         </a>
-  </div>
-  </ol>
+    </ol>
 
-  <!-- 플로팅시켜서 오른쪽에 띄울것임 -->
-  <span spanss="more__sites">
-    <a href="" class="more__sites__link">더보기</a>
-  </span>
+    <!-- 플로팅시켜서 오른쪽에 띄울것임 -->
+    <span spanss="more__sites">
+      <a href="" class="more__sites__link">더보기</a>
+    </span>
   </div>
 
 </body>
-
-
-
-
-
 </html>
