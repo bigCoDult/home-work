@@ -1,0 +1,95 @@
+.ranking_box {
+  background-color: brown;
+  width: 40%;
+
+}
+
+.ranking__ol {
+  /* counter-increment: none; */
+  list-style-type: none;
+  padding-left: 0;
+  counter-reset: list-counter;
+}
+
+.ranking__ol {
+  counter-reset: index;
+}
+
+.ranking__li::before {
+  
+  /* height: 10px; */
+  display: inline-flex;
+  counter-increment: index;
+  content: counter(index);
+  content: counter(index);
+  content: counter(index);
+  content: counter(index);
+  background-color: gray;
+  position: relative;
+
+}
+
+.li__span {
+  display: inline-flex;
+}
+
+.orangeFont {
+  color: orange;
+}
+
+.up {}
+
+.imageDiv {
+  /* background-color: white; */
+  width: 10px;
+  height: 10px;
+  background-image: url('rank.png');
+  /* background: no-repeat; */
+  /* background-size:  auto; */
+  background-position: 0 -22px;
+}
+
+.icon__up {}
+
+.icon__stay {
+  background-position: 0 0;
+  X and Y position in the spritesheet
+}
+
+.icon__down {
+  background-position: 0 0;
+  X and Y position in the spritesheet
+}
+
+
+
+
+
+
+.ranking__ol li {
+  padding-left: 26px;
+  space margin-bottom: 4px;
+}
+
+/* 
+
+li {
+  background-position: -0px -115px;
+
+}
+
+.ranking__ol li::before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  Position the number at the left side of the li element background-color: gray;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  Horizontally center the number align-items: center;
+  Vertically center the number font-weight: bold;
+} */
